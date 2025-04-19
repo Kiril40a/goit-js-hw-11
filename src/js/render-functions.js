@@ -1,4 +1,3 @@
-import iziToast from 'izitoast';
 import SimpleLightbox from 'simplelightbox';
 
 let galleryBox = document.querySelector(".gallery");
