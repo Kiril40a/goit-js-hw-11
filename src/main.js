@@ -17,7 +17,7 @@ document.querySelector(".form").addEventListener("submit", (e) => {
                         backgroundColor: 'rgba(255, 0, 0, .6)'
                     });
                 } else {
-                    createGallery(images);
+                    createGallery(data);
                 }
                 hideLoader();
             })
