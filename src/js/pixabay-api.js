@@ -12,9 +12,6 @@ export function getImagesByQuery(query) {
         .then(response => {
             return response.data.hits;
         })
-        .then(data => {
-            return data;
-        })
         .catch(error => {
             console.error('Error fetching images:', error);
         });

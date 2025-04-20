@@ -2,6 +2,14 @@ import SimpleLightbox from 'simplelightbox';
 
 let galleryBox = document.querySelector(".gallery");
 let loaderContainer = document.querySelector(".loader-container");
+let gallery = new SimpleLightbox('.gallery a', {
+    captionDelay: 250,
+    captions: true,
+    captionSelector: 'img',
+    captionsData: "alt",
+    captionPosition: 'bottom',
+    animated: true
+    });
 export function createGallery(images) {
     let liElements = [];
     images.forEach(elem => {
@@ -48,14 +56,6 @@ export function createGallery(images) {
     })
 
     galleryBox.append(...liElements);
-    let gallery = new SimpleLightbox('.gallery a', {
-    captionDelay: 250,
-    captions: true,
-    captionSelector: 'img',
-    captionsData: "alt",
-    captionPosition: 'bottom',
-    animated: true
-    });
     gallery.refresh();
     
 }
